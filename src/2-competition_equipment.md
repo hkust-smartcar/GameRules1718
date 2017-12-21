@@ -26,7 +26,7 @@ The 5 different car models provide a unified platform for the competition, and m
 
 ### (1) Microcontrollers
 
--   You must use the 8-bit, 16-bit or 32-bit series microcontroller by NXP as the **only** programmable controlling unit on the car model.
+-   You must use a 8-bit, 16-bit or 32-bit series microcontroller produced by NXP as the **only** programmable controlling unit on the car model.
 -   Within the Tri-Wheel Electromagnetic, Duo-Wheel Vertical and Wireless Power-Saving categories, you must **only** use the KEA MCU series by NXP, there is otherwise no limitations on MCU for other categories. If a Wireless Power-Saving team is to use a camera sensor for track detection, they may use other MCUs other-than the KEA series by NXP.
 -   There is no limitations on the number of microcontroller used.
 -   If sensors and other electronic components chosen also include microcontrollers, then there is no limitations on the type or the number used of said microcontrollers, however, they may not participate in the recognition and processing of the information of the track, and they may not participate in the movement decision-making and controlling of the cars.
@@ -51,3 +51,11 @@ The 5 different car models provide a unified platform for the competition, and m
     The "servo motors" on the car means motors other than the original motors that drives the wheels. They include: steering motors, stepper motors and other kinds of motors.
 -   **Limitations on the Number Used:**
     The number of servo motors must not exceed 3, which includes steering motors. The steering motors must be that provided into original car kit and you must only use 1 of that.
+-   **Limitations on Function**
+    The servo on the car may only be used to control the position on the sensors on board, or to control the posture of the chassis. It is not permitted to directly or indirectly use the servo to control the turning of the car or the control the speed of the wheels.
+
+## 3. Electronic Board
+
+Besides the minimum system board for the microcontrollers, ICs for accelerometers and gyroscopes, camera and the board within the steering motors, all circuitries are required to be designed in-house, and it is prohibited to purchase functional modules. Purchased minimum system boards must only contain: a microcontroller, clock, and power and microcontroller debugging ports. In-house produced PCB boards includes but not limited to: sensors, signal conditioning circuits, power management circuit, motor drivers, master control circuits, debugging circuits, et cetera. If in-house produced circuitries includes factory processed printed PCB boards, it is a requirement that the copper layer must include the competing team's school name, team name and competing year at a noticeable area. For really small boards, it is allowed to use acronyms of names which has to be easy to spot when examining the car models. (If the circuit board is smaller then 1 cm squared, then the board is not required to carry team information.)
+
+To implement self-aided competition, it may be required that the board should carry a QR code specified when applying for the competition. For this, more details will be released in relevant documentations.
