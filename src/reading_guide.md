@@ -1,5 +1,9 @@
 # The 13th Competition Game Rules Reading Guide
 
+**[Please be reminded that if there are any conflicts between this translation of the official documentation and the official documentation, the official documentation is to be trusted.]**
+
+**[Translated by Daniel Cheung 12/2017]**
+
 Team members who have competed in previous competitions may understand the main changes in the 13th Game Rules via the following text. If it is your first time joining the competition, you are advised to read this book thoroughly.
 
 1.  The Racing Competition is comprised of 6 categories. You may refer to the 1st chapter of the documentation for more details. Categories are no longer divided into larger classes. In contrast with previous rules, Categories will no longer be have distinguish Photoelectric and Camera as separate categories.
