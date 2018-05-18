@@ -1,0 +1,465 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li class="affix"><a href="./reading_guide.html">Reading Guide</a></li><li><a href="./1-preface.html"><strong>1.</strong> I. Preface</a></li><li><a href="./2-competition_equipment.html"><strong>2.</strong> II. Competition Equipment</a></li><li><a href="./3-competition_environment.html"><strong>3.</strong> III. Competition Environment</a></li><li><a href="./4-competition_missions.html"><strong>4.</strong> IV. Competition Missions</a></li><li><a href="./5-competition_organization.html"><strong>5.</strong> V. Competition Organization</a></li><li><a href="./6-others.html"><strong>6.</strong> VI. Others</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="print.html#the-13th-competition-game-rules-reading-guide" id="the-13th-competition-game-rules-reading-guide"><h1>The 13th Competition Game Rules Reading Guide</h1></a>
+<p><strong>[Please be reminded that if there are any conflicts between this translation of the official documentation and the official documentation, the official documentation is to be trusted.]</strong></p>
+<p><strong>[Translated by Daniel Cheung 12/2017]</strong></p>
+<p>Team members who have competed in previous competitions may understand the main changes in the 13th Game Rules via the following text. If it is your first time joining the competition, you are advised to read this book thoroughly.</p>
+<ol>
+<li>The Racing Competition is comprised of 6 categories. You may refer to the 1st chapter of the documentation for more details. Categories are no longer divided into larger classes. In contrast with previous rules, Categories will no longer be have distinguish Photoelectric and Camera as separate categories.</li>
+<li>Wireless Electromagnetic Power-Saving Group allows contestants to design custom car models for the competition. Car models receive electrical energy via the usage of wireless inductive charging from the starting area.</li>
+<li>Beacon category returned to the Racing Competition category again on the basis of the the inclusion of sound signal. The results of the preliminaries of the Duo-Wheel Vertical category and Beacon Dueling categories will be used for the preferences in matching in the finals.</li>
+<li>Creative category allows competing teams to apply directly at the National Organizing Committee. If the number of applied teams exceed a certain limit within the regional competitions, there will be held a Qualification Contest within the regional contests. The details will be determined on the number of competing teams.</li>
+<li>You are allowed to use microcontroller chips produced by NXP. There is no limit on the numbers of chips used. Only the KEA-series microcontroller chips are allowed in the Tri-Wheel Electromagnetic, Duo-Wheel Vertical, Wireless Charging category.</li>
+<li>The following documents will be released one by one in December:
+<ol>
+<li>The 13th Intelligent Car Racing Competition Beacon Competition System Manual</li>
+<li>The 13th Intelligent Car Racing Competition Wireless Charging System Manual</li>
+<li>The 13th Intelligent Car Racing Competition Game Judge System Manual</li>
+<li>The 13th Intelligent Car Racing Competition Automated Judging System and Game Flow Manual</li>
+</ol>
+</li>
+</ol>
+<a class="header" href="print.html#i-preface" id="i-preface"><h1>I. Preface</h1></a>
+<p>The Intelligent Car Racing Competition starting since 2006, by the ELT Advisory Board entrusted by the Ministry of Education Department of Higher Education. This creative technological competition aims to strengthen hands-on practicing in students, innovative skills and building team spirits.</p>
+<p>...</p>
+<p>Contestants must use the car model modules specified by the Competition Secretariat, and use 8-bit, 16-bit and 32-bit microcontrollers produced by NXP as the core controlling unit, devise independently a controlling scheme and undergo system design, including sensor signal collection manipulation, motor-driving, servo control and development of controlling algorithms and et cetera, complete the engineering production and tweaking of the intelligent car, compete in regional competitions in different provinces at the specified dates and places, and compete in the national contest after acquiring the finals qualification. Teams are ranked according to the time of completion of the tracks on site. Teams who compete in to national finals must submit, in-parallel, the technical documentation report of the car.</p>
+<p>The Competition Secretariat makes the following rules for different regional competitions and the national competition on the basis of practicality, to achieve openness, fairness and justice of the competition.</p>
+<p>Reviewing the Game Rules and experience from the 12th Competition, to balance the requirements of the current size of the contest and to avoid clone cars from appearing in the same categories, as well as to make convenience for schools with the limited space and compatible tracks to prepare for the competition, the Racing Competition will make settings for the 6 different categories, namely: <strong>A. Quad-Wheel Photoelectric, B: Tri-Wheel Electromagnetic, C: Duo-Wheel Vertical, D: Duo Car Crossover, E: Wireless Power-Saving, F: Beacon Duel</strong>. Details of each category are in latter portions in the documentation.</p>
+<p>Apart from the 6 normal categories, there will also be 2 categories of Creative. Details of those will be released separately.</p>
+<p>Each institution is limited to sending only 1 team for each different categories. For the number of teams allowed for regional competitions, please follow the rules released by the respective organizing committee for different provinces. Creative teams are to directly apply at the national organizing committee. If regional/provincial competitions have numbers of Creative teams exceeding a certain number, there may be a qualification competition during the regional competitions.</p>
+<a class="header" href="print.html#ii-competition-equipment" id="ii-competition-equipment"><h1>II. Competition Equipment</h1></a>
+<a class="header" href="print.html#1-car-models" id="1-car-models"><h2>1. Car Models</h2></a>
+<a class="header" href="print.html#1-types-of-car-models" id="1-types-of-car-models"><h3>(1) Types of Car Models</h3></a>
+<p>The competition allows 4 standard car models to be used in the 6 Racing categories and 2 Creative categories. The 4 car models includes 2 quad-wheel models and 2 duo-wheel vertical models.</p>
+<table><thead><tr><th> Number </th><th> Specifications                  </th><th> Categories                               </th><th> Supplier        </th></tr></thead><tbody>
+<tr><td> B      </td><td> Motor: 540 Servo: S-D5          </td><td> Quad-Wheel Photoelectric                 </td><td> 北京科宇通博科技有限公司    </td></tr>
+<tr><td> C      </td><td> Motor: RN-380 Servo: FUTABA3010 </td><td> Duo-Wheel Crossover (only allows C model) </td><td> 东莞市博思电子数码科技有限公司 </td></tr>
+<tr><td> D      </td><td> Motor: RS-380                   </td><td> Duo-Wheel Vertical                       </td><td> 东莞市博思电子数码科技有限公司 </td></tr>
+<tr><td> E      </td><td> Motor: RS-380                   </td><td> Duo-Wheel Vertical                       </td><td> 北京科宇通博科技有限公司    </td></tr>
+<tr><td> F      </td><td> Motor: RS-380                   </td><td> Tri-Wheel Electromagnetic                </td><td> 东莞市博思电子数码科技有限公司 </td></tr>
+</tbody></table>
+<p><em>Clarification 1:</em> 东莞市博思公司 has made improvements to the C and D models. The 13th Competition Duo-Wheel Crossover category only allows the use of the new C model. The old C model may only be used in the Power-Saving, Beacon Duel and Creative categories. Whereas both the new and old D models may be used simultaneously.</p>
+<p><em>Clarification 2:</em> 北京科宇通博科技有限公司 has made improvements in the B model. The 13th Competition allows the use of both versions.</p>
+<a class="header" href="print.html#2-car-model-modification-rules" id="2-car-model-modification-rules"><h3>(2) Car Model Modification Rules</h3></a>
+<p>The 5 different car models provide a unified platform for the competition, and modifying the car models must follow strict rules. Please refer to Appendix 1: Car Model Modification Rules for details.</p>
+<a class="header" href="print.html#2-electronic-components" id="2-electronic-components"><h2>2. Electronic Components</h2></a>
+<a class="header" href="print.html#1-microcontrollers" id="1-microcontrollers"><h3>(1) Microcontrollers</h3></a>
+<ul>
+<li>You must use a 8-bit, 16-bit or 32-bit series microcontroller produced by NXP as the <strong>only</strong> programmable controlling unit on the car model.</li>
+<li>Within the Tri-Wheel Electromagnetic, Duo-Wheel Vertical and Wireless Power-Saving categories, you must <strong>only</strong> use the KEA MCU series by NXP, there is otherwise no limitations on MCU for other categories. If a Wireless Power-Saving team is to use a camera sensor for track detection, they may use other MCUs other-than the KEA series by NXP.</li>
+<li>There is no limitations on the number of microcontroller used.</li>
+<li>If sensors and other electronic components chosen also include microcontrollers, then there is no limitations on the type or the number used of said microcontrollers, however, they may not participate in the recognition and processing of the information of the track, and they may not participate in the movement decision-making and controlling of the cars.</li>
+</ul>
+<a class="header" href="print.html#2-sensors" id="2-sensors"><h3>(2) Sensors</h3></a>
+<ul>
+<li>The types of sensors used must follow the regulations of the different competing categories. Please consult &quot;Competition Missions&quot;, for details on the allowed types of sensors for different competing categories.</li>
+<li>There must not be more than 16 sensors. The calculation of the sensors is as follows:
+<ul>
+<li>Photoelectric receiver unit counts as 1 sensor. The emitter unit for the receiver is not counted.</li>
+<li>CCD sensor counts as 1 sensor.</li>
+<li>Magnetic field sensors at the same place for different directions count as 1 sensor. Sensors and coils at different places are counted separately.</li>
+<li>Permanent magnetic Reed switches or Hall sensors for the use of detecting the starting line, with no regards on the actual used number, count as 1 sensor in total.</li>
+<li>Sensors for detecting the speed and posture of the car are also counted.</li>
+</ul>
+</li>
+<li>Limitations on Sensor Models
+<ul>
+<li>If you are to use an accelerometer independently, then you must use one produced by NXP.</li>
+<li>If you are to use a gyroscope, then there is no limitations on the sensor model.</li>
+<li>If you are use use a combined accelerometer and gyroscope sensor, then there is no limitations on the sensor model.</li>
+</ul>
+</li>
+</ul>
+<a class="header" href="print.html#3-servo-motors" id="3-servo-motors"><h3>(3) Servo Motors</h3></a>
+<ul>
+<li><strong>Definition:</strong>
+The &quot;servo motors&quot; on the car means motors other than the original motors that drives the wheels. They include: steering motors, stepper motors and other kinds of motors.</li>
+<li><strong>Limitations on the Number Used:</strong>
+The number of servo motors must not exceed 3, which includes steering motors. The steering motors must be that provided into original car kit and you must only use 1 of that.</li>
+<li><strong>Limitations on Function</strong>
+The servo on the car may only be used to control the position on the sensors on board, or to control the posture of the chassis. It is not permitted to directly or indirectly use the servo to control the turning of the car or the control the speed of the wheels.</li>
+</ul>
+<a class="header" href="print.html#3-electronic-board" id="3-electronic-board"><h2>3. Electronic Board</h2></a>
+<p>Besides the minimum system board for the microcontrollers, ICs for accelerometers and gyroscopes, camera and the board within the steering motors, all circuitries are required to be designed in-house, and it is prohibited to purchase functional modules. Purchased minimum system boards must only contain: a microcontroller, clock, and power and microcontroller debugging ports. In-house produced PCB boards includes but not limited to: sensors, signal conditioning circuits, power management circuit, motor drivers, master control circuits, debugging circuits, et cetera. If in-house produced circuitries includes factory processed printed PCB boards, it is a requirement that the copper layer must include the competing team's school name, team name and competing year at a noticeable area. For really small boards, it is allowed to use acronyms of names which has to be easy to spot when examining the car models. (If the circuit board is smaller then 1 cm squared, then the board is not required to carry team information.)</p>
+<p>To implement self-aided competition, it may be required that the board should carry a QR code specified when applying for the competition. For this, more details will be released in relevant documentations.</p>
+<a class="header" href="print.html#iii-competition-environment" id="iii-competition-environment"><h1>III. Competition Environment</h1></a>
+<a class="header" href="print.html#1-track" id="1-track"><h2>1. Track</h2></a>
+<a class="header" href="print.html#1-track-material" id="1-track-material"><h3>(1) Track Material</h3></a>
+<p>Tracks are made from PCV laminated flooring. The material is same to the 10th, 11th and 12th competition.</p>
+<a class="header" href="print.html#2-track-dimension-shape-and-spacing" id="2-track-dimension-shape-and-spacing"><h3>(2) Track Dimension, Shape and Spacing</h3></a>
+<p>Track width is at least 45cm wide. Preliminary game field is a 5m × 7m rectangle. The final's will be roughly 2 times of that in the Preliminary. The centers of 2 neighboring tracks is at least 60cm apart. The entire track contains straight, curved, cross roads and et cetera. The radii of curved roads are at least 50cm.</p>
+<a class="header" href="print.html#3-tracking-guides" id="3-tracking-guides"><h3>(3) Tracking Guides</h3></a>
+<p>For different categories, there will be track guides, which includes the following 3:</p>
+<ul>
+<li>
+<p><strong>Track Edge Guide</strong></p>
+<p>The track edges will have black edge strips for track guidance (strips within the 45cm boundary of the track width). The edge strips have width 25±5mm.</p>
+</li>
+<li>
+<p><strong>Median Electromagnetic Guide</strong></p>
+<p>The track will have embedded a central electromagnetic wire. The line is a magnet wire that runs along the center of the track, diameter 0.1~1.0mm, with 20kH, 100mA AC current. Frequency range being 20k±1kHz, current range 100±20mA.</p>
+<p>According to information provided by the 20kHz AC wire used in the competition, it is recommended to use the following steps to measure the current of the track. If the current output shape of the wire used by the competing team is similar to a square wave, then the AC mode on the multi-meter is able to tell the current value of the current output.</p>
+<p>The recess in the track to fixate the magnet wire can be made with some tools. A dual-blade hobby knife with a blade gap of 1.5mm can draw out material along the median line of the track. After removing the PVC strip, an inset with depth 1mm, width 1.5mm would have been made for laying the magnet wire.</p>
+</li>
+<li>
+<p><strong>Beacon Guide</strong></p>
+<p>There will be 5 to 10 beacons on the game field on the blue PVC canvas. The car shall move according to the guide of the beacons. Around the beacons are red, and IR LED arrays and on top hold speakers. The LEDs and speakers are activated through the competition system. Regarding the specifications and production methods of the beacons, please refer to The 13th Intelligent Car Racing Competition Beacon Competition System Manual.</p>
+<p>During the Dual-Car Duel competition, the car can recognize the emitted red light or IR of the beacon via sensors or cameras or such to locate its position. It is also possible to locate the sound source via a microphone array. Since the beacon utilizes both light and sound guide, the accuracy of identification of that by the cars is increased, and the impact of environmental light rays is decreased.</p>
+</li>
+</ul>
+<a class="header" href="print.html#4-starting-line-indication" id="4-starting-line-indication"><h3>(4) Starting Line Indication</h3></a>
+<p>The competition requires cars to automatically stop in the stopping zone after competition completion. Except for the Creative category, all other categories require cars to stop in the 3m track region behind the starting line. When stopping, all wheels of the car should remain on the track.</p>
+<p>The indication of the starting line include the 2 following schemes:</p>
+<p>Zebra strips starting line: The starting location for activation of the timer has a line of black zebra strips of 10cm of width. The material for the zebra strips uses the same as that for the black edge strips.</p>
+<p>For the Electromagnetic categories, at the center of the track lies permanent magnets. The magnet parameters: diameter 7.5~15mm, height 1-3mm, surface magnetic field strength 3000-5000Gs.</p>
+<p>The distribution of the permanent magnets near the starting position are aligned in a way such that they are mirrors along the center with the center magnet directly on the median line and a magnet on each side spaced 4cm from centers of the magnets. The 3 magnets forms a line perpendicular to the travel direction.</p>
+<p>For the Beacon Duel competition, the starting zone is at a corner of the game field, forming a square with each side 50cm wide. At the end of the competition, the cars are not required  to stay at some stopping zone.</p>
+<a class="header" href="print.html#5-track-edge-judging" id="5-track-edge-judging"><h3>(5) Track Edge Judging</h3></a>
+<p>Except the Beacon Duel category, all other categories require cars to stay on the track full time during the run.</p>
+<p>On the edge of the game tracks may lie 2 layers of high-density black sponge strips, forming a shoulder for the track, as the border of the track. It is also possible that there may not be high-density black sponge strips.</p>
+<p>The sponge strips have width 2.5cm, the double layer has height 1cm. For every other 25cm of track edge, there will be a sponge strip which has length of 25cm, forming a dashed line. Edges where there is no sponge strips still have the black edge strips.</p>
+<p>For tracks that has shoulders, manual judging will be used to decide whether or not to give penalty to cars that run off track. The penalties and standards are the same as previous competitions. For tracks that do not have shoulders, the judging system will be used, and random places will be chosen with sensor coils installed to automatically give penalties. Details of the penalty standards will be released as Penalties Specification Documentation.</p>
+<p>In the 13th competition, some regional competitions will utilize automatic judging system to replace manual judging for cars running off track. By then, the competitions will not install shoulders for track edges. Details of the standards will be release in The 13th Intelligent Car Racing Competition Automatics Judging System and Game Flow.</p>
+<a class="header" href="print.html#6-track-elements" id="6-track-elements"><h3>(6) Track Elements</h3></a>
+<p>The competition track is a closed-loop track, with the following track elements.</p>
+<table><thead><tr><th> Track Elements  </th><th> Details                                  </th></tr></thead><tbody>
+<tr><td> Straight Road   </td><td> The basic track.                         </td></tr>
+<tr><td> Curved Road     </td><td> The track contains multiple curved road sections. These curved sections can form a roundabout, rounded turn, S-shaped tracks, et cetera. The radii of the curved tracks are at least 50cm. </td></tr>
+<tr><td> Cross Road      </td><td> Cars passing the cross road sections are required to pass straight. Turning left or right are not permitted. </td></tr>
+<tr><td> Track Obstacles </td><td> The track obstacles are symmetrical triangular wedges, with length, width, height be 30cm, 10cm and 5cm correspondingly.<br />The side of the wedge closer to the center of the track is spaced 5cm to the central line.<br /><strong>Electromagnetic categories do not have track obstacles. These categories include: Electromagnetic, Power-Saving, Electromagnetic Dual-Car Chasing</strong> </td></tr>
+<tr><td> Ramp            </td><td> The ramp slopes do not exceed 20°. Ramps do not have to be symmetrical. Transitional sections of the ramp are longer than 10cm. There is no limits of the length and height of the ramps. Under normal circumstances, the total length of the ramps are around 1.5m. The guide wire of Electromagnetic categories are laid along the surface of ramps. </td></tr>
+<tr><td> Ring Road       </td><td> Cars entering ring roads should run along the ring once then continue straight out. The ring roads has radii not less than 50cm.<br />Electromagnetic guide wires are also run along the ring once. </td></tr>
+<tr><td> Bumpy Surface   </td><td> Straight tracks may contain a section of bumpy road section no longer than 1m. At most 2 bumpy sections will exist on one track.<br />The Bumps are produced by cutting single layered KT boards. The horizontal length of a bump is the same width of the track. Its width is 10cm, height smaller than 0.5cm, spacing 10cm apart from side to side.<br />The top rectangle of the bump is tapered such that the slop of the tapered sides forms 45° from the ground. </td></tr>
+</tbody></table>
+<p>The above track elements are used as the following table states:</p>
+<table><thead><tr><th> Track Elements </th><th> Regional Prelim. </th><th> Regional Final </th><th> Regional Additional Match </th><th> National Final </th></tr></thead><tbody>
+<tr><td> Straight Road  </td><td> Y                </td><td> Y              </td><td> Y                         </td><td> Y              </td></tr>
+<tr><td> Curved Road    </td><td> Y                </td><td> Y              </td><td> Y                         </td><td> Y              </td></tr>
+<tr><td> Cross Road     </td><td> Y                </td><td> Y              </td><td> Y                         </td><td> Y              </td></tr>
+<tr><td> Track Obstacle </td><td> <strong><em>Y</em></strong>          </td><td> Y              </td><td> <strong><em>N</em></strong>                   </td><td> Y              </td></tr>
+<tr><td> Ramp           </td><td> <strong><em>N</em></strong>          </td><td> Y              </td><td> <strong><em>N</em></strong>                   </td><td> Y              </td></tr>
+<tr><td> Ring Road      </td><td> <strong><em>Y</em></strong>          </td><td> Y              </td><td> <strong><em>N</em></strong>                   </td><td> Y              </td></tr>
+<tr><td> Bumpy Road     </td><td> <strong><em>Y</em></strong>          </td><td> Y              </td><td> <strong><em>N</em></strong>                   </td><td> Y              </td></tr>
+</tbody></table>
+<a class="header" href="print.html#2-environment" id="2-environment"><h2>2. Environment</h2></a>
+<a class="header" href="print.html#1-game-field" id="1-game-field"><h3>(1) Game Field</h3></a>
+<ul>
+<li>The game field should have a smooth flooring. If the flooring is smooth cement, Terrazzo or marble, then the tracks will be directly installed on top. Whereas if the flooring is a carpet material, then there will first be a layer of KT board above the flooring, then have the tracks installed above that.</li>
+<li>Color of the flooring: The color of the flooring should have certain contrast with the white track. The color is determined according to the flooring used on-site. Under normal circumstances, blue canvas will be used to set the background color. Details of the actual background color used at the competition will be released one month before the official competition.</li>
+</ul>
+<a class="header" href="print.html#2-environmental-lighting" id="2-environmental-lighting"><h3>(2) Environmental Lighting</h3></a>
+<p>The competition venue is normally indoors. During the competition, there must not be direct sunlight nor intensive incandescent lighting. For the 2 Electromagnetic categories, because the impact of environmental lighting to the competition is less, therefore, there will not be limitations stated above, and the venue may be at a venue outside with no direct sunlight.</p>
+<a class="header" href="print.html#3-game-field-border-walls" id="3-game-field-border-walls"><h3>(3) Game Field Border Walls</h3></a>
+<p>There will be walls surrounding the game field. The walls are at least 50cm away from the track. The height of the walls are at least 30cm high. The material of the wall may be rectangular foam blocks, or banner cloth.</p>
+<a class="header" href="print.html#3-judging-system" id="3-judging-system"><h2>3. Judging System</h2></a>
+<p>The timing judging system used in the competition will automatically record car running time and judge whether the cars run off track automatically.</p>
+<a class="header" href="print.html#1-car-timing-magnetic-label" id="1-car-timing-magnetic-label"><h3>(1) Car Timing Magnetic Label</h3></a>
+<p>The magnetic field sensing recording method used by the competition records the instant of when the cars run across the starting line, or detecting whether or not the car is running within 22.5cm around the beacons. Sensor coils are places under the track and around the beacons, and the interference to the running car is small. In the mean time, the car cannot easily crash into the timing system.</p>
+<p>For the car to trigger the timing system, it is required to install a piece of permanent magnet as label under the car. The permanent magnet should be at most 2cm from the ground. Because the size of the magnetic label is small, it increases the accuracy in measuring the location of the car.</p>
+<p>Timing magnetic labels can be permanently adhered to the bottom plate of the car, or temporarily affixed on the bottom plate or on the motors before competition. The exact placement of the magnetic label is not important, because time is measured by recording the time interval every time the magnetic label passes the sensor coils.</p>
+<p>Special notice for the Beacon Duel category, only when the magnetic label enters the sensor coil ring around the beacon, does the timing system gets triggered to light up the next beacon.</p>
+<a class="header" href="print.html#2-timing-system" id="2-timing-system"><h3>(2) Timing System</h3></a>
+<p>The competition timing system and the beacon control system are all installed by the competition organizing committee.</p>
+<p>Contestants may design a simplified competition system to help debug their cars during regular practices. They can also refer to The 13th Intelligent Car Racing Competition System Manual in order to design and construct the system.</p>
+<a class="header" href="print.html#iv-competition-missions" id="iv-competition-missions"><h1>IV. Competition Missions</h1></a>
+<p>This section will explain the limitations on car models, sensors and the missions to complete in each individual category.</p>
+<p>The dimension of the car models after assembly must adhere to the unified requirements:</p>
+<p>In all categories, in a normal running posture, the car length must be less than 40cm, width less than 25cm and height less than 40cm.</p>
+<p><strong>Length Measuring Method:</strong> The required length is the length along the forward direction of the car, from the back of the car to the most front sensor. The bump protection piece is not included in the calculation.</p>
+<p><strong>Width Measuring Method:</strong> The entire width of the car. There is a separate width limitation regarding the protective piece in the Beacon Duel category.</p>
+<p><strong>Height Measuring Method:</strong> The highest point of the car to the ground. For the Dual-Car Crossover and Power-Saving categories, the height from the center of the lens of the camera sensor to the ground is required to be less than 10cm.</p>
+<a class="header" href="print.html#a-quad-wheel-photoelectric-category" id="a-quad-wheel-photoelectric-category"><h2>A. Quad-Wheel Photoelectric Category</h2></a>
+<a class="header" href="print.html#1-car-models-1" id="1-car-models-1"><h3>(1) Car Models</h3></a>
+<p>It is allowed to use the B car model. The car model uses a single motor to drive the back wheels, motor model 540. The front wheels are steered by an SD-5 steering motor for turning.</p>
+<a class="header" href="print.html#2-sensors-1" id="2-sensors-1"><h3>(2) Sensors</h3></a>
+<p>It is allowed to use all sorts of photoelectric sensors, cameras, ultrasonic sensors for track and environment detection.</p>
+<a class="header" href="print.html#3-competition-track" id="3-competition-track"><h3>(3) Competition Track</h3></a>
+<p>The competition is completed on PVC tracks. The competition track has black edge strips for guidance. Track elements include those stated in chapter 3.</p>
+<a class="header" href="print.html#4-competition-mission" id="4-competition-mission"><h3>(4) Competition Mission</h3></a>
+<p>Cars which are constructed by contestants must complete a lap on the track. Time is recorded from the moment the car crosses the starting line to the moment it returns to the starting line. If the car cannot stop in the 3m track section behind the starting line, 1s is added to the time as penalty.</p>
+<a class="header" href="print.html#b-tri-wheel-electromagnetic-category" id="b-tri-wheel-electromagnetic-category"><h2>B. Tri-Wheel Electromagnetic Category</h2></a>
+<a class="header" href="print.html#1-car-models-2" id="1-car-models-2"><h3>(1) Car Models</h3></a>
+<p>Uses the tri-wheel F model. The running direction has the omni wheel in front and dual-motor-driven wheels in the back.</p>
+<a class="header" href="print.html#2-sensors-2" id="2-sensors-2"><h3>(2) Sensors</h3></a>
+<p>Allowed sensors include inductance coils or any sort of magnetic field detection sensors to detect the alternating magnetic field on the track.</p>
+<p>It is prohibited to use any sort of photoelectric sensors or camera sensors to detect track features. However, photoelectric encoders for detecting car speed are still allowed.</p>
+<p>The length from the far end of sensors and their structural support to the back end of the car must not exceed 40cm.</p>
+<a class="header" href="print.html#3-competition-track-1" id="3-competition-track-1"><h3>(3) Competition Track</h3></a>
+<p>The competition is completed on PVC tracks. The competition track has magnet wires for guidance. Track elements include those stated in chapter 3.</p>
+<a class="header" href="print.html#4-competition-mission-1" id="4-competition-mission-1"><h3>(4) Competition Mission</h3></a>
+<p>Cars which are constructed by contestants must complete a lap on the track. Time is recorded from the moment the car crosses the starting line to the moment it returns to the starting line. If the car cannot stop in the 3m track section behind the starting line, 1s is added to the time as penalty.</p>
+<a class="header" href="print.html#c-dual-wheel-vertical-category" id="c-dual-wheel-vertical-category"><h2>C. Dual-Wheel Vertical Category</h2></a>
+<a class="header" href="print.html#1-car-models-3" id="1-car-models-3"><h3>(1) Car Models</h3></a>
+<p>It is allowed to use one of either D or E dual-wheel model.</p>
+<a class="header" href="print.html#2-sensors-3" id="2-sensors-3"><h3>(2) Sensors</h3></a>
+<p>Allowed sensors include inductance coils or any sort of magnetic field detection sensors to detect the alternating magnetic field on the track.</p>
+<p>It is prohibited to use any sort of photoelectric sensors or camera sensors to detect track features. However, photoelectric encoders for detecting car speed are still allowed.</p>
+<a class="header" href="print.html#3-competition-track-2" id="3-competition-track-2"><h3>(3) Competition Track</h3></a>
+<p>The competition is completed on PVC tracks. The competition track has magnet wires for guidance. Track elements include those stated in chapter 3 other than Track Obstacles.</p>
+<a class="header" href="print.html#4-competition-mission-2" id="4-competition-mission-2"><h3>(4) Competition Mission</h3></a>
+<p>The competition consists of 2 stages. The first stage is the preliminary competition, which requires contestants to construct a vertical car for electromagnetic sensors to complete one lap. The power comes from the battery on the car. Time is recorded from the moment the car crosses the starting line to the moment it returns to the starting line. If the car cannot stop in the 3m track section behind the starting line, 1s is added to the time as penalty.</p>
+<p>The second stage is the final. Ordering of competing pairs comes from the resulting rankings from the preliminary and a number of top teams in the preliminary is selected to compete in the final. The final uses the knockout tournament format for elimination. Competing pairs compete in parallel separate tracks and run at the same time, until meeting one of the following circumstances to decide a winner:</p>
+<ol>
+<li>When a car overtakes the other car and win;</li>
+<li>When a car runs off track or stops running, then the other car wins;</li>
+<li>When a car first completes the required number of laps. Required number laps are normally set to at least 3. The actual required laps number will be released later.</li>
+</ol>
+<a class="header" href="print.html#d-dual-car-crossover" id="d-dual-car-crossover"><h2>D. Dual-Car Crossover</h2></a>
+<a class="header" href="print.html#1-car-models-4" id="1-car-models-4"><h3>(1) Car Models</h3></a>
+<p>Uses the new C quad-wheel model. Assemble 2 cars for the competition.</p>
+<a class="header" href="print.html#2-sensors-4" id="2-sensors-4"><h3>(2) Sensors</h3></a>
+<p>Allowed sensors include inductance coils or any sort of magnetic field detection sensors to detect the alternating magnetic field on the track.</p>
+<p>It is also allowed to install a camera. The height from the center of the camera lens to the ground must not exceed 10cm. However, there is no height limitation on magnetic sensors.</p>
+<p>It is allowed to use wireless communication modules for information exchange between cars.</p>
+<a class="header" href="print.html#3-competition-track-3" id="3-competition-track-3"><h3>(3) Competition Track</h3></a>
+<p>The competition is completed on PVC tracks. The competition track has magnet wires and black edge strips for guidance. Track elements include those stated in chapter 3 other than Track Obstacles.</p>
+<a class="header" href="print.html#4-competition-mission-3" id="4-competition-mission-3"><h3>(4) Competition Mission</h3></a>
+<p>Contestants assemble 2 cars, and start the cars on the left and right starting regions. The car first crosses each other near the starting line, then separate and runs in opposite directions. After meeting again midway in the course, they return again to the starting line. After passing each other again, the cars should stop in 3m range to the starting line. A successful competition requires at least 3 crossing overs.</p>
+<p>Competition score <code>t</code> equals to the time both cars complete 1 lap <code>t1</code> plus the time interval then until when the 2 cars arrives at the completion positions <code>t2 * 5</code>. <code>t = t1 + 5 * t2</code>.</p>
+<p>If in the competition, only 1 car completes the course, then the score is the run time of that car plus 60 seconds.</p>
+<a class="header" href="print.html#e-wireless-power-saving-category" id="e-wireless-power-saving-category"><h2>E. Wireless Power-Saving Category</h2></a>
+<a class="header" href="print.html#1-car-models-5" id="1-car-models-5"><h3>(1) Car Models</h3></a>
+<p>It is allowed to use any one of the B, C, D, E and F car models. It is also allowed to design and construct a custom car model.</p>
+<a class="header" href="print.html#2-sensors-5" id="2-sensors-5"><h3>(2) Sensors</h3></a>
+<p>It is allowed to use both electromagnetic inductance coils to follow the guide wire or camera sensor for track feature detection.</p>
+<a class="header" href="print.html#3-competition-track-4" id="3-competition-track-4"><h3>(3) Competition Track</h3></a>
+<p>The competition is completed on PVC tracks. The competition track has magnet wires and black edge strips for guidance. Track elements include those stated in chapter 3 other than Track Obstacles.</p>
+<p>The competition track car starting zones have installed on them wireless emitter coils, through AC, creates an alternating magnetic field. The car receives electrical energy through inductance coils, then charges the Farad capacitor to store energy. Regarding the specifications and manufacturing methods of the wireless charging coils, a documentation will be release separately for details.</p>
+<a class="header" href="print.html#4-competition-mission-4" id="4-competition-mission-4"><h3>(4) Competition Mission</h3></a>
+<p>It is prohibited to install any battery components. The power to drive the car comes from the wireless receiver coils by induction to provide electrical energy.</p>
+<p>Before entering the game field, the energy storing capacitor on the car is required to undergo discharging, until the DC voltage across the capacitor becomes less than 0.1V. The timing will start when the wireless charging coils receive power. The car should run along the tracks for 2 laps and then stop in the 3m section behind the starting line. The competition score is the total time the car used to complete the 2 laps.</p>
+<a class="header" href="print.html#f-beacon-dueling-category" id="f-beacon-dueling-category"><h2>F. Beacon Dueling Category</h2></a>
+<a class="header" href="print.html#1-car-models-6" id="1-car-models-6"><h3>(1) Car Models</h3></a>
+<p>It is allowed to use any one of the B, C, D, E and F car models.</p>
+<a class="header" href="print.html#2-sensors-6" id="2-sensors-6"><h3>(2) Sensors</h3></a>
+<p>It is allowed to use phototubes, cameras, microphone arrays and ultrasonic sensors to complete the detection and location of the beacons.</p>
+<a class="header" href="print.html#3-competition-track-5" id="3-competition-track-5"><h3>(3) Competition Track</h3></a>
+<p>The game field is set on a flat piece of ground, with a single color canvas or carpet as flooring. The game field is bordered by yellow tapes with width of 5cm. The area of the game field is approximately 5m×7m. The square car starting region is located at one corner of the game field, marked with a 2.5cm wide black tape border. The starting region is both 50cm in width and in length.</p>
+<a class="header" href="print.html#4-competition-mission-5" id="4-competition-mission-5"><h3>(4) Competition Mission</h3></a>
+<p>The competition consists of the preliminary and final 2 stages.</p>
+<p>The first stage is the preliminary. The car assembled by the contestant is placed in the starting region. All the beacons are off at this stage. After starting the competition, the competition system will activate the first beacon. The beacon will emit sound and light as guide signals. At this point, the car should be able to recognize and confirm the location of the beacons and orientate its movements. When the magnetic label on the car enters the ring of sensor coils around the beacon, the competition system will automatically toggle the beacon and activate the next one.  Then the car should go for the next lit beacon. This process should run for around 10 times. The final recorded time for the competition is when the first beacon first light up until the last one gets turned off.</p>
+<p>The second stage is the final. Ordering of competing pairs comes from the resulting rankings from the preliminary. 2 cars from 2 teams are on the game field simultaneously, the team who deactivated more beacons wins.</p>
+<p>The upper limit of the number of installed magnetic labels on the car is 4. The shortest distance between the magnetic label and either the wheels or the base board must not exceed 5cm, and the distance to the ground must not exceed 2cm.</p>
+<a class="header" href="print.html#v-competition-organization" id="v-competition-organization"><h1>V. Competition Organization</h1></a>
+<a class="header" href="print.html#1-competition-stages" id="1-competition-stages"><h2>1. Competition Stages</h2></a>
+<p>The entire competition consists of regional and national final competitions these 2 stages. For the national final stage, under the lead of the National Competition Organizing Committee Secretariat, the Competition Execution Committee is founded with schools who are holding the final competitions, which has subordinate departments including: the Technical Department, Referee Department and Arbitration Department, to centralize processing of all sorts of issues encountered during the competition.</p>
+<p>No staff of the Competition Organizing Committee for the regional and final competitions, including the Technical Adjudication Department, Live Referee Department and Arbitration Department are allowed to tutor or mentor any individual group, nor are they allowed to leak any information that impact the fairness of the competition. During live of the competition, the Competition Organizing Committee can hire teachers who lead their school teams as car model inspectors.</p>
+<p>Functional body of the competition:</p>
+<pre><code>Competition Organizing Committee
+ |- Committee Affairs Department
+ |- Referee Department
+ |- Specialist Department
+ `- Arbitration Committee
+</code></pre>
+<p>During the regional stage, referees and technical adjudications are implemented by the Competition Organizing Committees in different regions according the above stated principles. Arbitrations are done by Arbitration Departments appointed by the Competition Organizing Committees in different regions. Cross-region or cross-level arbitrations are not permitted.</p>
+<p>Live competitions normally require 4 days for organizing. The basic arrangements is as follows:</p>
+<table><thead><tr><th> Day 1<br />Registration                  </th><th> Day 2<br />On-Site Debugging             </th><th> Day 3<br />Preliminary                   </th><th> Day 4<br />Final                         </th></tr></thead><tbody>
+<tr><td> <small>*(Competition application)*→</small> <br />Confirm application information<br />Receive competition documents<br />Confirm accommodation arrangements and contact information<br />Confirm debugging timeslot </td><td> Morning debugging<br />Afternoon debugging<br />Team captain meeting </td><td> Opening ceremony<br />Submit car models<br />Morning competition<br />Afternoon competition<br />Additional matches </td><td> Final competition<br />Closing ceremony<br />Car models exhibition<br />Retrieve car models<br /><small>→*(National final)*</small> </td></tr>
+</tbody></table>
+<p>The regional and national competitions have the same rules. The 2 Photoelectric and Photoelectric Chasing Categories, in principle, is better suitable to be held in the same brighter venue. The 2 Electromagnetic and Electromagnetic Chasing Categories in comparison do not require good lighting environment, so they can be held in the other venues. The 6 Categories are following similar game rules but score ranking are recorded separately.</p>
+<p>The live regional and national competitions both consist of preliminary and final, 2 stages. The following rules for preliminary and final competitions are applicable for the 6 regional and final Categories.</p>
+<a class="header" href="print.html#2-competition-flow" id="2-competition-flow"><h2>2. Competition Flow</h2></a>
+<a class="header" href="print.html#1-preliminary-and-final-rules" id="1-preliminary-and-final-rules"><h3>(1) Preliminary and Final Rules</h3></a>
+<a class="header" href="print.html#1-preliminary-rules" id="1-preliminary-rules"><h4>1) Preliminary Rules</h4></a>
+<ol>
+<li>Competition venues are set with 2 to 6 tracks according the venue restrictions and the number of competing teams. Different Categories may share the same tracks.</li>
+<li>Competing teams are separated into groups according to the Categories, and the ordering of competition run will be decided by lottery.</li>
+<li>Competitions are divided into morning and afternoon competitions, each competing team may debug and tweak their cars before each round within 15mins. During this time, teams may bring tools for maintenance for both software and hardware parts of the car and they may repair damaged portions of it.</li>
+<li>In every round of competition, when contestants enter the game field, they have 60 seconds of preparation time. After the preparation time, contestants are to place their cars in the starting region on the track, and the cars are to remain still within the starting region.</li>
+<li>After the start of the competition, the car of each group are to follow the competition missions and complete a run on the game field. If the car runs off track, then the competition is to start over. Each team have a total of 2 chances to retry for running off track.</li>
+<li>Each competing team use their best score out of the two preliminary scores as their final preliminary score. Depending on the number of the competing teams, the Committee will choose a ratio of teams according to their scores to compete in the finals.</li>
+<li>All car models must be placed in the exhibition area during the entire competition.</li>
+</ol>
+<a class="header" href="print.html#2-final-rules" id="2-final-rules"><h4>2) Final Rules</h4></a>
+<ol>
+<li>Competing teams are ordered in decreasing order according to their preliminary scores for their competition order in the final competition.</li>
+<li>The final competition venue will normally contain one shared track for competition. The track shape is different than that in the preliminary, occupies more area and the track length would be longer. Electromagnetic Categories may install another separate track.</li>
+<li>Each competing team only has one chance to enter the game field for the game run, which has the same requirements as in the preliminary. Caution: final teams have the same competition flow as in the preliminary, with 2 chances for running off track, but with no maintenance chance for the car.</li>
+<li>Scores in the preliminary are not counted in that in the final, as they are only used for the competition ordering. Teams that do not compete in the final competitions will have their preliminary scores as their end score, to enter the ranking for the Category.</li>
+</ol>
+<a class="header" href="print.html#2-competition-flow-1" id="2-competition-flow-1"><h3>(2) Competition Flow</h3></a>
+<p>According to the competition ordering, referees instruct competing teams to enter the game fields accordingly. In any given moment, there is only one team on a game field for competition.</p>
+<p>After the referee takes attendance, each team appoints one team member to carry the car and to enter the game field. Contestants have 60 seconds for live preparation. After preparation, the referee announces the start of the competition, contestants are to place their cars in the starting region, meaning no part of the car is allowed to exceed the starting line for timing. After the start of the competition, the cars should leave the starting region within 30 seconds and complete a lap along the track. The time is automatically recorded by the starting line timing sensor. After the cars completes a lap and stops, contestants are to retrieve their cars and leave the game fields, and return the car the specified location.</p>
+<p>If the competition completes, the automatic score keeper system will give out the resulting score.</p>
+<a class="header" href="print.html#3-competition-violations-and-failure-rules" id="3-competition-violations-and-failure-rules"><h3>(3) Competition Violations and Failure Rules</h3></a>
+<p>During the competition, the main referee decides, according to the game rules, whether a car violates the constriction of the track on-site. For the first 2 times when the car runs off tracks, a referee will retrieve the car and return it to the team member, to return to the starting region immediately to restart the competition. Contestants may also forfeit the competition after their car runs off track.</p>
+<p>Whenever the competition shows the following circumstances, the car is counted as being run off track:</p>
+<ul>
+<li>After the referee takes attendance, the contesting team is unable to enter the game field and finish preparation within 30 seconds.</li>
+<li>After starting, the car fails to leave the starting region within 30 seconds.</li>
+<li>During Dual-Car Chasing, the 2 cars collides or contact physically.</li>
+<li>After leaving the starting region, the car is unable to complete a lap within 60 seconds.</li>
+</ul>
+<p>Whenever the competition shows the following circumstances, it is counted as failing the competition:</p>
+<ul>
+<li>The car runs off track more than 2 times.</li>
+<li>After the competition starts, the contestants touches their car without permission by the referee.</li>
+<li>After the final competition, the car fails to pass on-site technical inspection.</li>
+</ul>
+<p>If a team fails the competition, then no score is recorded.</p>
+<a class="header" href="print.html#competition-prohibitions" id="competition-prohibitions"><h4>Competition Prohibitions</h4></a>
+<ul>
+<li>It is not allowed to install auxiliary lighting and other auxiliary sensors aside from on the car.</li>
+<li>After contestants enter the game field, apart from switching batteries, they are not allowed to conduct any hardware or software change. However, they may manually alter the settings on DIP switches or potentiometers.</li>
+<li>Within the game field, apart from the referee and 1 team member, it is not allowed to bring anyone else on the game field. However, for the 2 Categories in Chasing, it is allowed to have 2 team members on the game field. Within the 60 seconds preparation time, it is allowed to have other team members on the game field to help clear up the track.</li>
+<li>It is not allowed to interfere with or remotely control the movements of the car.</li>
+<li>It is not allowed for any sensors or parts of the car to damage the track.</li>
+<li>It is not allowed to copy car designs, each team's software and hardware design must have an apparent difference among each other. For the 2 cars in the 2 Chasing Categories, if they are from different teams, then their hardware and software must also be different.</li>
+</ul>
+<a class="header" href="print.html#4-other-notices" id="4-other-notices"><h3>(4) Other Notices</h3></a>
+<ol>
+<li>Before the official start of each competition, each competing team have an on-site timeslot for debugging and tweaking the car to adapt to the environment. The debugging track may not have the same shape as the actual competition track.</li>
+<li>Before the start of the competition, all cars are collected and stored at the safekeeping area, until the end of the competition.</li>
+<li>During the competition, the Competition Organizing Committee Technical Department will conduct technical inspection on the competing cars according the circumstances. If there is a violation to the prohibitions of the game rules, the Committee has the power to cancel the score of the competing team.</li>
+</ol>
+<a class="header" href="print.html#3-competition-prizes" id="3-competition-prizes"><h2>3. Competition Prizes</h2></a>
+<p>The competition follows the principle of &quot;dissemination of regional competitions and elevation of national competition&quot;. Under regional competitions, prizes are set in equal ratio to each Category. Each Category qualifies the regional teams, corresponding to the same teams, for competing in the national final competition. <small>(The translation should be perfect. It's just that I don't even know what they mean in Chinese. 😂 May mean: Each category qualifies regional teams, according to the same qualification methods, for competing in the national final competition.)</small></p>
+<a class="header" href="print.html#1-regional-prizes-allocations" id="1-regional-prizes-allocations"><h3>(1) Regional Prizes Allocations</h3></a>
+<ul>
+<li>First Prizes: Top 20% of teams in regional competition.</li>
+<li>Second Prizes: Top 35% of teams in regional competition.</li>
+<li>Third Prizes: Remaining Teams who can complete the competition but are not awarded first or second prizes.</li>
+<li>Merits: Teams who are not able to complete the normal competition, but completed one in the additional matches.</li>
+</ul>
+<p>Each regional competition may adjust the allocation of the different prizes if they see fit, with proposal sent to the Competition Organizing Committee for approval.</p>
+<a class="header" href="print.html#2-final-prizes-allocations" id="2-final-prizes-allocations"><h3>(2) Final Prizes Allocations</h3></a>
+<p>The 13th National Final Prizes Allocations will be released separately.</p>
+<a class="header" href="print.html#vi-others" id="vi-others"><h1>VI. Others</h1></a>
+<ol>
+<li>Other cheating behaviors during the competitions will result in cancellation of the competition score.</li>
+<li>Teams who competed in the preliminary competition and are qualified for competing in the final competition may not switch team members.</li>
+<li>Teams who compete in the national final competition may switch at max 1 team member.</li>
+<li>The power for interpretation of this rule book belongs to the Competition Organizing Committee and the Racing Competition Secretariat.</li>
+</ol>
+<p><strong>[Please be reminded that if there are any conflicts between this translation of the official documentation and the official documentation, the official documentation is to be trusted.]</strong></p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+
+                
+
+            </div>
+
+            
+
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+        <script>
+            $(document).ready(function() {
+                window.print();
+            })
+        </script>
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+    </body>
+</html>
