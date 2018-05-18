@@ -2,6 +2,10 @@
 
 This repo contains the translated 13th Intelligent Car Racing Competition Game Rules. The files may be compiled into an HTML e-book using `mdbook` built with `rust`.
 
+## Online Version
+
+https://hkust-smartcar.github.io/GameRules1718/
+
 ## Releases
 
 If you don't want to compile the book by yourself. Check out the latest [releases](https://github.com/hkust-smartcar/GameRules1718/releases).
